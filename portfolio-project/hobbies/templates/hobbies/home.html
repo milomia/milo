@@ -38,14 +38,14 @@
         <div class="container">
 
           <div class="row">
-            {% for hobby in hobbies.all %}
+            {% for hobby in hobby.all %}
 
             <div class="col-md-4">
-              <a href="{% url 'detail' job.id %}">
+              <a href="{% url 'detail' hobby.id %}">
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" src="{{ hobby.image.url }}">
                 <div class="card-body">
-                  <p class="card-text">{{ job.summary }}</p>
+                  <p class="card-text">{{ hobby.summary }}</p>
                 </div>
               </div>
               </a>
