@@ -30,7 +30,7 @@
           <p>
             <a href="mailto:milomhunt@icloud.com" class="btn btn-primary my-2">Email Me</a>
           </p>
-          <img src="{% static 'milo.jpg' %}" height="500" />
+          <img src="{% static 'milo.jpg' %}" height="300" />
         </div>
       </section>
 
@@ -40,10 +40,10 @@
           <div class="row">
             {% for hobby in hobby.all %}
 
-            <div class="col-md-4">
+            <div class="col-md-2">
               <a href="{% url 'detail' hobby.id %}">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="{{ hobby.image.url }}">
+                <img class="card-img-top" src="{{ hobby.image.url }} ">
                 <div class="card-body">
                   <p class="card-text">{{ hobby.summary }}</p>
                 </div>
