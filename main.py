@@ -9,8 +9,7 @@ from langchain.llms import OpenAI
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 def main():
-    print("Hello World!")
-    OPENAI_API_KEY="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"
+    print("Hello World!"
     print(OPENAI_API_KEY)
 
     llm = OpenAI(openai_api_key=OPENAI_API_KEY)
